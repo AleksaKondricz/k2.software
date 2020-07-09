@@ -1,0 +1,11 @@
+@import '../../styles/theme/theme.scss';
+
+footer{
+    background-color: $white-shade;
+    padding: 60px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #dddee1;
+}
