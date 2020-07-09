@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../layout/layout";
 import {Button, Card} from '../components/components';
+import MainCube from '../svg/mainCube';
 
 import techStackData from '../constants/techLogos';
 import background from '../images/geo-big.svg';
@@ -15,7 +16,8 @@ const IndexPage = () => (
   <Layout>
   <div className={styles.homePage}>
     <div className={styles.hero}>
-      <img src={background}/>
+      {/*<img src={background}/>*/}
+      <MainCube/>
       <div className={styles.heroContent}>
       <h1>We turn visions into reality,<br/> your problems into dust.</h1>
       <p>K2 Software is reliable, refreshing and ready to tackle any issue you may fence <br/>onto the road of launching your business idea into the internet space.</p>

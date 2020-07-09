@@ -1,0 +1,169 @@
+#heroCube{
+    width: 78%;
+    #float{
+
+        position: relative;
+        z-index: 10;
+    }
+    
+        
+           #topCube{
+            transform: translate(5px, 10px);
+               animation: animateTop .3s .1s ease-in-out backwards;
+           }
+       
+           #bottomCube{
+            transform:translate(114.725px, 220.122px);
+            animation: bottomCube .3s .25s ease-in-out backwards;
+        }
+        #cube1{
+            transform: translate(354.122px, 224.785px);
+            animation: cube1 .3s .5s ease-in-out backwards;
+        }
+        #cube2{
+            transform: translate(180.326px, 272.354px);
+            animation: cube2 .3s .75s ease-in-out backwards;
+        }
+        #cube3{
+            transform: translate(180.326, 383.037);
+            animation: cube3 .3s 1s ease-in-out backwards;
+        }
+        #cube4{
+            transform: translate(280.795px, -10px);
+            animation: cube4 .3s 1.25s ease-in-out backwards;
+        }
+        
+        #orangeCube{
+            transform: translate(589.479px, 124.363px);
+            animation: animateOrange .3s 1.3s ease-in-out backwards;
+            animation-iteration-count: initial;
+        }
+        #cube5{
+            transform: translate(622.746px, 292.874px);
+            animation: cube5 .3s 1.75s ease-in-out backwards;
+        }
+        #cube6{
+            transform: translate(684.616px, 489.056px);
+            animation: cube6 .3s 2s ease-in-out backwards;
+        }
+        #cube7{
+            transform: translate(42.905px, 219.189px);
+            animation: cube7 .3s 2.26s ease-in-out backwards;
+        }
+       
+        
+    
+}
+
+@keyframes animateOrange{
+    from{
+        transform: translate(605.341px, 150px)
+    }
+
+    to{
+        transform: translate(589.479px, 124.363px);
+    }
+}
+
+@keyframes animateTop{
+    from{
+        transform: translate(55.341px, 16.167px)
+    }
+
+    to{
+        transform: translate(5px, 10px);
+    }
+}
+
+@keyframes bottomCube{
+    from{
+        transform: translate(101px, 358px);
+   
+    }
+    to{
+        transform:translate(114.725px, 220.122px);
+      
+    }
+  
+}
+
+@keyframes cube1{
+   from{
+    transform:translate(344.795px, 220px);
+   }
+   to{
+    transform: translate(354.122px, 224.785px);
+   }
+}
+
+@keyframes cube2{
+    from{
+     transform:translate(170.795px, 250px);
+    }
+    to{
+     transform: translate(180.326px 272.354px);
+    }
+ }
+
+ @keyframes cube3{
+    from{
+     transform:translate(180.326px, 444px);
+    }
+    to{
+     transform: translate(180.326, 383.037);
+    }
+ }
+
+ @keyframes cube4{
+    from{
+     transform:translate(344.795px);
+    }
+    to{
+     transform: translate(280.795px, -10px);
+    }
+ }
+
+ @keyframes cube5{
+    from{
+     transform:translate(622.746px, 360px);
+    }
+    to{
+        transform: translate(622.746px, 292.874px);
+    }
+ }
+
+ @keyframes cube6{
+    from{
+     transform:translate(684.616px, 510px);
+    }
+    to{
+        transform: translate(684.616px, 489.056px);
+    }
+ }
+
+ @keyframes cube7{
+    from{
+     transform:translate(32.616px, 200px);
+    }
+    to{
+        transform: translate(42.905px, 219.189px);
+    }
+ }
+
+ @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-2px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+
+
