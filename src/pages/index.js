@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../layout/layout";
 import {Button, Card} from '../components/components';
+import {ContactForm} from '../containers/containers';
+
 import MainCube from '../svg/mainCube';
 
 import techStackData from '../constants/techLogos';
@@ -61,8 +63,10 @@ const IndexPage = () => (
         <h1>Our biggest pleasure is having clients from <mark>all over the world.</mark></h1>
         <img src={map}/>
       </div>
-  
-
+      <div className={styles.contact}>
+   
+      <ContactForm/>
+      </div>
   </div>
 
   </Layout>

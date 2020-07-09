@@ -1,0 +1,53 @@
+@import '../../styles/theme/theme.scss';
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 30px;
+    width: 40%;
+    &>nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &>img{
+            cursor: pointer;
+            width: 55px;
+            height: 55px;
+        }
+    }
+    &>h3{
+        font-weight: 100;
+        color: $black;
+        margin-bottom: 0;
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    &>p{
+        color: $black;
+        opacity: .96;
+        letter-spacing: .4px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    &>div{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        width: 100%;
+        &>input{
+        width: 48%;
+        }
+      
+     
+    }
+    &>button{
+        height: 44px;
+        border-radius: 0;
+        font-size: .9rem;
+        vertical-align: middle;
+        font-weight: 300;
+    }
+   
+}

@@ -1,0 +1,16 @@
+@import '../../styles/theme/theme.scss';
+
+input{
+    font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    padding: 3px 3px 3px 12px;
+    height: 38px;
+    border-radius: 0;
+    color: $black;
+    font-weight: 400;
+ 
+    box-sizing: border-box;
+    border: 1px solid $black;
+    letter-spacing: .62px;
+    font-family: $body-font;
+    width: 100%;
+}
