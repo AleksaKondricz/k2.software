@@ -7,10 +7,13 @@ input{
     border-radius: 0;
     color: $black;
     font-weight: 400;
- 
     box-sizing: border-box;
-    border: 1px solid $black;
+    border: 1px solid #dddee1;
     letter-spacing: .62px;
     font-family: $body-font;
     width: 100%;
+    &:focus{
+        outline: none;
+        border: 1px solid $black;
+    }
 }

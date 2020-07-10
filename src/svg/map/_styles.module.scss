@@ -1,0 +1,49 @@
+@import '../../styles/theme/theme.scss';
+
+
+    #circle{
+        r: 0;
+        animation: changeColor 1s 5s infinite linear forwards;
+       
+    }
+    #circle1{
+        r: 0;
+        animation: changeColor 1s 8s infinite linear forwards;
+    }
+    #circle2{
+        r: 0;
+        animation: changeColor 1s 12s infinite linear forwards;
+    }
+    #circle3{
+        r: 0;
+        animation: changeColor 1s 15s infinite linear forwards;
+    }
+    #circle4{
+        r: 0;
+        animation: changeColor 1s .3s infinite linear forwards;
+    }
+    #circle5{
+        r: 0;
+        animation: changeColor 1s 1s infinite linear forwards;
+    }
+    #circle6{
+        r: 0;
+        animation: changeColor 1s 18s infinite linear forwards;
+    }
+    #circle7{
+        r: 0;
+        animation: changeColor 1s infinite linear forwards;
+    }
+
+
+@keyframes changeColor{
+    form{
+ 
+        r: 0;
+    }
+    to{
+        r: 7;
+     
+        
+    }
+}

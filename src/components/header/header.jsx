@@ -1,7 +1,9 @@
 
 
 import React from "react"
-import {Button} from '../components';
+import {navigate} from 'gatsby';
+
+
 
 import logo from '../../images/logo-gradient.svg'
 
@@ -16,7 +18,7 @@ const Header = () => (
       <li>Technologies</li>
       <li>Clients</li>
     </nav>
-    <span>get an estimate</span>
+    <span onClick={()=>navigate('/getEstimation')}>get an estimate</span>
   </header>
 )
 

@@ -57,6 +57,12 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: $black;
+            &:hover{
+                &>img{
+                    transform: scale(1.15);
+                    transition: transform .35s ease-in-out;
+                }
+            }
             &>img{
                 height: 60px;
                 margin: 0 6px 0 0;
@@ -92,6 +98,12 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: $black;
+            &:hover{
+                &>img{
+                    transform: scale(1.15);
+                    transition: transform .35s ease-in-out;
+                }
+            }
             &>img{
                 height: 60px;
          
@@ -123,6 +135,12 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: $black;
+            &:hover{
+                &>img{
+                    transform: scale(1.15);
+                    transition: transform .35s ease-in-out;
+                }
+            }
             &>img{
                 height: 60px;
                 margin: 0 6px 0 0;
@@ -157,6 +175,7 @@
             border-radius: 9px;
             margin-right: 16px;
             margin-bottom: 16px;
+            transition: transform .15s ease-out;
            &:hover{
                transform: scale(1.1);
                transition: transform .25s ease-in;
@@ -185,9 +204,16 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: $black;
+            &:hover{
+                &>img{
+                    transform: scale(1.15);
+                    transition: transform .35s ease-in-out;
+                }
+            }
             &>img{
                 height: 60px;
                 margin: 0 6px 0 0;
+
             }
         }}
     &>.callToAction{
@@ -197,7 +223,9 @@
         justify-content: center;
         background-color: $white-shade;
         height: calc(100vh - 80px);
+        width: 100%;
         position: relative;
+        padding-bottom: 30px;
       &>h1{
           position: absolute;
           top: 35vh;
@@ -206,12 +234,11 @@
           &>mark{
               background-color: transparent;
               color: $red-100;
-              animation: colorChange 1.3s infinite linear forwards;
-              transition: all .45s ;
+            
           }
       }
-        &>img{
-            width: 80%;
+        &>svg{
+            width: 86%;
         }
       }
       &>.contact{
@@ -228,16 +255,3 @@
 }
 
 
-@keyframes colorChange{
-  0%{
-     color: $red-20;
-
-  }
-  50%{
-    color:$red-60;
-}
-100%{
-   color: $red-darker;
-}
-
-}

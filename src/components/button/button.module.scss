@@ -5,6 +5,10 @@ button{
     text-transform: capitalize;
     cursor: pointer;
     border-radius: 4px;
+    &:focus{
+        outline: none;
+        border: none;
+    }
 }
 .primary{
     font-size: 1.05rem;

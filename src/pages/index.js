@@ -3,7 +3,7 @@ import Layout from "../layout/layout";
 import {Button, Card} from '../components/components';
 import {ContactForm} from '../containers/containers';
 
-import MainCube from '../svg/mainCube';
+import {MainCube, Map} from '../svg/svg';
 
 import techStackData from '../constants/techLogos';
 import background from '../images/geo-big.svg';
@@ -50,7 +50,7 @@ const IndexPage = () => (
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 <div className={styles.techCards}>
                 {techStackData.map( tech => (<div className={styles.iconFrame}>
-                  <a href={tech.httpUrl}>
+                  <a target='_blank' href={tech.httpUrl}>
                     <img src={tech.url}/>
                   </a>
                 </div>))}
@@ -61,7 +61,7 @@ const IndexPage = () => (
       </div>
       <div className={styles.callToAction}>
         <h1>Our biggest pleasure is having clients from <mark>all over the world.</mark></h1>
-        <img src={map}/>
+        <Map/>
       </div>
       <div className={styles.contact}>
    

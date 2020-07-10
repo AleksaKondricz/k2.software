@@ -30,13 +30,15 @@
         background-color: $red-60;
         
     }
+    transition: all .35s ease-out;
     &:hover{
         cursor: pointer;
         transform: scale(1.1);
         transition: transform ease-in .45s;
         &>span{
-            transition: background-color .45s ease-in;
-            background-color: $red-darker;
+            transition: all .45s ease-in;
+            background-color: $pink-100;
+            transform: rotate(45deg);
         }
     }
 }
@@ -52,6 +54,7 @@
     &>p{
         width: 57%;
     }
+    transition: transform .35s ease-out;
     &:hover{
         cursor: pointer;
         transform: scale(1.05);
