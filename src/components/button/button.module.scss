@@ -4,7 +4,7 @@ button{
     padding: .75rem 1.95rem;
     text-transform: capitalize;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 1px;
     &:focus{
         outline: none;
         border: none;
@@ -38,4 +38,38 @@ button{
         color: $white;
         transition: all .45s ease-in-out;
     }
+}
+
+.form{
+    font-size: 1.05rem;
+    background-color: $red-100;
+    letter-spacing: .7px;
+    color: $white;
+    border: 1px solid $red-100;
+   ;
+    padding: .85rem 2.55rem;
+    &:hover{
+        box-shadow: 0 8px 32px rgba(255,75,31,.24), 0 4px 8px rgba(255,75,31,.14);
+       background-color: $red-darker;
+       border: 1px solid $red-darker;
+       transition: all .45s ease-in-out;
+   }
+   
+}
+
+.formBack{
+    font-size: 1.05rem;
+    background-color: transparent;
+    letter-spacing: .7px;
+    color: $black-shade;
+    border: none;
+    padding: .85rem 2.55rem;
+    &:hover{
+      box-shadow: 0 8px 32px rgba(0, 0, 0,.05), 0 4px 8px rgba(0,0,0,.03);
+       background-color: $black-shade;
+       color: $white;
+       border: none;
+       transition: all .45s ease-in-out;
+   }
+   
 }

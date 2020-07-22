@@ -1,0 +1,26 @@
+{
+    "id": "project-status-screen",
+    "label": "The Status of my Project.",
+    "description": "Is your project just starting or it's ongoing. Let us now, so we can make our estimate.",
+    "elements": [
+      {
+        "id": "fromStartProject",
+        "variant": "select-icon",
+        "options": [
+          {
+            "label": "I'm starting this project from scratch.",
+            "value": "scratch",
+            "icon": "Ongoing",
+            "required": true
+          },
+           {
+             "label": "The project is ongoing.",
+             "value": "ongoing",
+             "icon": "Scratch",
+            
+             "required": true
+           }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,43 @@
+svg{
+    &:hover{
+        #first{
+                opacity: 1;
+                animation: blink .35s ease-in forwards;
+        }
+        #second{
+            opacity: 1;
+            animation: blink .35s .2 ease-in forwards;
+        }
+        #third{
+            opacity: 1;
+            animation: blink .35s .3s ease-in forwards;
+        }
+        #fourth{
+            opacity: 1;
+            animation: blink .35s .4s ease-in forwards;
+        }
+        #fifth{
+            opacity: 1;
+            animation: blink .35s .5s ease-in forwards;
+        }
+        #sixth{
+            opacity: 1;
+            animation: blink .35s .6s ease-in forwards;
+        }
+        #seventh{
+            opacity: 1;
+            animation: blink .35s .7s ease-in forwards;
+        }
+        
+    }
+}
+
+@keyframes blink{
+    from {
+        opacity: 0
+        
+    }
+    to{
+        opacity: 1
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "id": "project-type-screen",
+    "label": "Type of Project.",
+    "description": "Are you developing a mobile app, building for the web or you just need consulting. Let us know.",
+    "elements": [
+      {
+        "id": "fromStartProject",
+        "variant": "select-icon",
+        "options": [
+          {
+            "label": "Web Development.",
+            "value": "WebDevelopment",
+            "icon": "WebDev",
+            "required": true
+          },
+           {
+            "label": "Mobile Development.",
+            "value": "MobileDevelopment",
+            "icon": "MobDev",
+            "required": true
+           },
+           {
+            "label": "Consulting Services.",
+            "value": "Consulting",
+            "icon": "Consult",
+            "required": true
+          }
+  
+        ]
+      }
+    ]
+  }
+
+
+
+  

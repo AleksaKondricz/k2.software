@@ -6,18 +6,18 @@ import { Footer, Header } from "../components/components"
 
 import styles from './layout.module.scss';
 
-const Layout = ({ children, type }) => {
+const FormLayout = ({ children }) => {
   return (
-    <div className={styles.layout} >
-      <Header />
-        <main>{children}</main>
-      <Footer/>
+    <div className={styles.estimationFormLayout} >
+      <Header type='formHeader'/>
+      {children}
+     
     </div>
   )
 }
 
-Layout.propTypes = {
+FormLayout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default FormLayout

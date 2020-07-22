@@ -1,0 +1,19 @@
+svg{
+    &:hover{
+       transition: animation .25s ease-out both;
+       #rocketFly{
+        transform: translate(327px, 126px);
+        animation: fly .45s ease-in;
+        transition: transform .25s ease-in forwards;
+       }
+  }
+}
+
+@keyframes fly{
+    from{
+        transform: translate(287px, 149px);
+    }
+    to{
+        transform: translate(327px, 126px);
+    }
+}

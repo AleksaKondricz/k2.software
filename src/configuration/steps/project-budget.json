@@ -1,0 +1,14 @@
+{
+    "id": "project-budget-screen",
+    "label": "What is your budget?",
+    "elements": [
+        {
+            "id": "budget",
+            "label": "My maximum budget is",
+            "variant": "text",
+            "value": "maxBudget",
+            "icon": "$",
+            "required": true
+          }
+    ]
+  }

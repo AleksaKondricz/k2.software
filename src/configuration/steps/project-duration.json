@@ -1,0 +1,37 @@
+{
+    "id": "project-duration-screen",
+    "label": "How fast you need this project done?",
+    "description": "What is the urgency of the product.Should we develop it faster or time doesn't matter.",
+    "elements": [
+      {
+        "id": "fromStartProject",
+        "variant": "select-icon",
+        "options": [
+          {
+          "label": "Few days.",
+          "value": "Days",
+          "icon": "Days",
+          "required": true
+            
+          },
+           {
+            "label": "Few weeks.",
+            "value": "Weeks",
+            "icon": "Days",
+            "required": true
+           },
+           {
+            "label": "Few months.",
+            "value": "Months",
+            "icon": "Days",
+            "required": true
+          }
+  
+        ]
+      }
+    ]
+
+  }
+
+  
+  
