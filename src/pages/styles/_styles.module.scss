@@ -228,6 +228,7 @@
         padding-bottom: 30px;
       &>h1{
           position: absolute;
+          z-index: 3;
           top: 35vh;
           color: $black;
           

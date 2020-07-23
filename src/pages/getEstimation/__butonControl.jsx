@@ -10,7 +10,7 @@ export default ({ navigation, setNavigation, combinedSteps}) => (
         <Button
           onClick={() => setNavigation(navigation - 1)}
           type="formBack"
-          label="Back"
+          label="&#8592; Back"
         />
       ) : (
         <div />
@@ -19,7 +19,7 @@ export default ({ navigation, setNavigation, combinedSteps}) => (
         <Button
           onClick={() => setNavigation(navigation + 1)}
           type="form"
-          label="Next"
+          label="Next &#8594;"
           
         />
       ) : (

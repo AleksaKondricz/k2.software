@@ -10,7 +10,8 @@ import styles from './__styles.module.scss';
 const combinedSteps = [
     steps.projectStatus,
     steps.projectType,
-    steps.projectDuration
+    steps.projectDuration,
+    steps.projectBudget
   ]
 
 

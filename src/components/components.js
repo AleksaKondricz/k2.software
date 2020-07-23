@@ -2,5 +2,5 @@ export {default as Header} from './header/header';
 export {default as Footer} from './footer/footer';
 export {default as Button} from './button/button';
 export {default as Card} from './cards/basicCard/card';
-export {default as Input} from './input/input';
-export {default as IconInput} from './input/iconInput/iconInput';
+export {default as TextInput} from './input/textInput/input';
+

@@ -17,13 +17,13 @@
            {
             "label": "Few weeks.",
             "value": "Weeks",
-            "icon": "Days",
+            "icon": "Weeks",
             "required": true
            },
            {
             "label": "Few months.",
             "value": "Months",
-            "icon": "Days",
+            "icon": "Months",
             "required": true
           }
   

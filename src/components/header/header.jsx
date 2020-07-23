@@ -19,7 +19,8 @@ const Header = ({type}) => (
       <li>Technologies</li>
       <li>Clients</li>
     </nav>}
-    <span className={type==='formHeader'? styles[type] : styles.estimate} onClick={()=>navigate('/getEstimation')}>{type==='formHeader'? 'X' : 'get an estimate'}</span>
+    {type==='formHeader' ? <span className={styles.formHeader} onClick={()=>navigate('/')}>X</span> : <span className={styles.estimate} onClick={()=>navigate('/getEstimation')}>get an estimation</span>}
+   
   </header>
 )
 

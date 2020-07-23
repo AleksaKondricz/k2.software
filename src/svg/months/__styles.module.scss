@@ -1,4 +1,5 @@
 
+
 #iconSvg{
     transition: animation .35 ease-in both;
     &:hover{
@@ -18,13 +19,14 @@
         transform: scale(1.1);
     }
 }
+
 @keyframes rip{
     from{
-        transform: translate(-25px, -348.944px);
+        transform: translate(-25px, -362.602px);
        
     }
     to{
-        transform: translate(-25px, -339px);
+        transform: translate(-25px, -349px);
         opacity: 0;
         
        

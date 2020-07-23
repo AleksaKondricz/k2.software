@@ -4,10 +4,10 @@
     "elements": [
         {
             "id": "budget",
-            "label": "My maximum budget is",
-            "variant": "text",
-            "value": "maxBudget",
-            "icon": "$",
+            "label": "My maximum budget for this project.",
+            "beforeSymbol": "$",
+            "afterSymbol": "per hour.",
+            "variant": "number",
             "required": true
           }
     ]

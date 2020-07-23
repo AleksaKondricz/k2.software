@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './input.module.scss';
 
 
-const Input = ({placeholder}) => {
+const TextInput = ({placeholder}) => {
     return (<input placeholder={placeholder} />  );
 }
  
-export default Input;
+export default TextInput;

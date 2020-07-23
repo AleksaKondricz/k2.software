@@ -1,12 +1,24 @@
-svg{
+#iconSvg{
+    transition: animation .35 ease-in both;
     &:hover{
-       transition: animation .25s ease-out both;
+        animation: grow .35s ease-in forwards; 
+        transition: animation .35 ease-in both;
+   
        #rocketFly{
         transform: translate(327px, 126px);
         animation: fly .45s ease-in;
         transition: transform .25s ease-in forwards;
        }
   }
+}
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
 
 @keyframes fly{

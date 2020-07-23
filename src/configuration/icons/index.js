@@ -1,4 +1,5 @@
-import { Scratch, Ongoing, MobDev, WebDev, Consult, Days } from "../../svg/svg";
+import { Scratch, Ongoing, MobDev, WebDev, Consult, Days,
+  Weeks, Months } from "../../svg/svg";
 
 export default {
   Scratch,
@@ -6,5 +7,7 @@ export default {
   MobDev,
   WebDev,
   Consult,
-  Days
+  Days,
+  Weeks,
+  Months
 }

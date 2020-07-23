@@ -1,5 +1,5 @@
 import React from 'react'
-import {Input, Button} from '../../components/components';
+import {TextInput, Button} from '../../components/components';
 import twitter from '../../../static/twitter.svg';
 import whatsup from '../../../static/whatsup.svg';
 import discord from '../../../static/discord.svg';
@@ -19,10 +19,10 @@ const ContactForm = () => {
             </nav>
              <h3>Let's Get in Touch!</h3>
              <p>You have a vision, but you need someone to help you execute it? Search no more.</p>
-             <Input placeholder='Full Name'/>
+             <TextInput placeholder='Full Name'/>
              <div>
-                 <Input placeholder='Email'/>
-                 <Input placeholder='Phone'/>
+                 <TextInput placeholder='Email'/>
+                 <TextInput placeholder='Phone'/>
              </div>
              <Button type='primary' label='Reach Out'/>
         </div>

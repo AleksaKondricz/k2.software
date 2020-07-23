@@ -1,5 +1,5 @@
 import React from 'react'
-import {IconInput} from '../../components/components';
+import Input from '../../components/input/';
 
 import icons from '../../configuration/icons/'
 import styles from './__styles.module.scss';
@@ -23,7 +23,7 @@ const QuestionScreen = ({
       <div className={styles.optionsWrapper}>
       {elements.map(element =>
       
-          (<IconInput
+          (<Input
             onChange={props =>
               updateApplicationState({ ...props, id: element.id })
             }

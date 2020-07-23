@@ -6,3 +6,5 @@ export {default as WebDev} from './webDev/webDev';
 export {default as MobDev} from './mob/mob';
 export {default as Consult} from './consult/consult';
 export {default as Days} from './days/days';
+export {default as Weeks} from './weeks/weeks';
+export {default as Months} from './months/months';

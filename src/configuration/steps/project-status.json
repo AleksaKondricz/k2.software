@@ -8,7 +8,7 @@
         "variant": "select-icon",
         "options": [
           {
-            "label": "I'm starting this project from scratch.",
+            "label": "Starting from scratch.",
             "value": "scratch",
             "icon": "Ongoing",
             "required": true
