@@ -6,7 +6,7 @@
             "id": "budget",
             "label": "My maximum budget for this project.",
             "beforeSymbol": "$",
-            "afterSymbol": "per hour.",
+            "afterSymbol": "for entire project.",
             "variant": "number",
             "required": true
           }

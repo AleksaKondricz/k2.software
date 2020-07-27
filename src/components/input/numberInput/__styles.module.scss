@@ -33,7 +33,7 @@
     }
     & > .endSymbol {
         position: absolute;
-        right: 5px;
+        right: 50px;
         font-weight: 600;
         font-size: 16px;
         color: $white;
@@ -44,8 +44,9 @@
       top: 0;
       bottom: 0;
       padding-left: 10px;
+      border-radius: 0;
       left: 40px;
-      width: calc(100% - 120px);
+      width: calc(100% - 280px);
       height: 100%;
       box-sizing: border-box;
       border: none!important;

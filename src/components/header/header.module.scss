@@ -38,6 +38,9 @@
       }
       }
   }
+  &>.mobMenu{
+    display: none;
+  }
   &>.formHeader{
     cursor: pointer;
     margin-right: 2%;
@@ -77,3 +80,52 @@
 }
 
 
+@media only screen and (max-width: 800px) {
+  .headerLanding{
+    &>.mobMenu{
+      display: block;
+      margin-right:  5%;
+      &>svg{
+        width: 30px;
+      }
+      &>span{
+        font-size: 1.9rem;
+        color: $red-100;
+        font-weight: 500;
+      }
+    }
+  
+    &>.mobMenuExtended{
+      position: fixed;
+      top: 80px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $white-shade;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      &>nav{
+        margin-left: 5%;
+        margin-bottom: 80px;
+        &>li{
+          list-style-type: none;
+          font-size: 2rem;
+          font-weight: 700;
+          margin: 30px 0;
+          color: $black;
+        }
+      }
+    }
+    &>img{
+      height: 40px;
+      margin-left: 5%;
+    }
+    &>nav{
+      display: none;
+    };
+    &>.estimate{
+      display: none;
+    }
+  }
+}

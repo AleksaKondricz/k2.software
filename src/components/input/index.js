@@ -7,6 +7,7 @@ import TextInput from "./textInput/input";
 import NumberInput from './numberInput/numberInput';
 
 
+
 const rootInput = ({ variant, ...props }) => {
   switch (variant) {
     case "number":{
@@ -24,7 +25,7 @@ rootInput.propTypes = {
   variant: PropTypes.oneOf([
     "number",
     "select-icon",
-    "text",
+    "text"
   ]).isRequired,
 }
 

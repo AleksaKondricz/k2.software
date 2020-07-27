@@ -215,7 +215,17 @@
                 margin: 0 6px 0 0;
 
             }
-        }}
+        }
+        &>.testimonials{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 0 0 0;
+            &>article{
+                margin: 60px 50px;
+            }
+        }
+    }
     &>.callToAction{
         display: flex;
         flex-direction: column;
@@ -256,3 +266,86 @@
 }
 
 
+
+
+@media only screen and (max-width: 800px) {
+    .homePage{
+        &>.hero{
+            flex-direction: column-reverse;
+            width: 90%;
+            margin: auto;
+            &>.heroContent{
+                position: relative;
+                left: 0;
+                top: 0;
+                &>h1{
+                    font-size: 1.75rem;
+                }
+                &>p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &>.methods{
+            display: none;
+        }
+        &>.tech{
+            &>p{
+                margin-top: 10px;
+                font-size: .9rem;
+            }
+            &>.title{
+                font-size: 1.2rem;
+                &>img{
+                    height: 40px;
+                    margin: 0;
+                }
+            }
+            &>.techCards{
+                margin: 0;
+                &>.iconFrame{
+                    min-width: 50px;
+                    height: 50px;
+                    &>a{
+                        &>img{
+                            height: 35px;
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        &>.clients{
+            &>.title{
+                font-size: 1.2rem;
+                &>img{
+                    height: 40px;
+                    margin: 0;
+                }
+            }
+            &>.testimonials{
+                flex-direction: column;
+                padding-top: 40px;
+                &>article{
+                    margin: 0;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        &>.services{
+            display: none;
+        }
+
+        &>.callToAction{
+            &>h1{text-align: center;
+                font-size:1.2rem;
+                top: 15vh;
+            }
+            &>svg{
+                width: 86%;
+            }
+            height: 40vh;
+        }
+    }
+  }

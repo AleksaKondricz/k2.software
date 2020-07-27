@@ -33,7 +33,7 @@
     transition: all .35s ease-out;
     &:hover{
         cursor: pointer;
-        transform: scale(1.1);
+        transform: scale(1.05);
         transition: transform ease-in .45s;
         &>span{
             transition: all .45s ease-in;

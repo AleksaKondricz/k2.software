@@ -1,0 +1,58 @@
+@import '../../../styles/theme/theme.scss';
+
+.testimonial{
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 18vw;
+    min-height: 18vw; 
+    padding: 0 24px;
+    padding-top: 24px;
+    border-radius: 9px;
+    position: relative;
+    transition: transform .35s ease-out;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: transform ease-in .45s;
+        &>.rating{
+            &>img{
+                transform: rotate(90deg);
+                transition: transform .35s ease-in;
+            }
+        }
+     
+    }
+    &>.rating{
+        border-bottom: 1px solid $gray;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 24px ;
+        &>img{
+            width: 20px;
+            margin-left: 3px;
+        }
+    }
+    &>.content{
+        &>h4{
+            margin: 12px 0;
+            font-size: 1.1rem;
+            color: $black;
+        }
+        &>p{
+            margin: 0;
+            line-height: 24px;
+        }
+        &>.author{
+            margin: 12px 0;
+      
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .testimonial{
+        width: 70%;
+    }
+}

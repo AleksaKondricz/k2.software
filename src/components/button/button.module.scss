@@ -4,7 +4,7 @@ button{
     padding: .75rem 1.95rem;
     text-transform: capitalize;
     cursor: pointer;
-    border-radius: 1px;
+    border-radius: 4px;
     &:focus{
         outline: none;
         border: none;
@@ -14,7 +14,7 @@ button{
     font-size: 1.05rem;
     background-color: $red-100;
     color: $white;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: .4px;
     height: 52px;
     border: 1px solid $red-100;
@@ -72,4 +72,10 @@ button{
        transition: all .45s ease-in-out;
    }
    
+}
+
+@media only screen and (max-width: 800px) {
+    .primary{
+        font-size: .9rem;
+    }
 }

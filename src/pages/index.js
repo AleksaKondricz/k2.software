@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../layout/layout";
-import {Button, Card} from '../components/components';
+import {Button, Card, TestimonialCard} from '../components/components';
 import {ContactForm} from '../containers/containers';
 
 import {MainCube, Map} from '../svg/svg';
@@ -58,6 +58,11 @@ const IndexPage = () => (
       </div>
       <div className={styles.clients}>
               <div className={styles.title}><img src={flag}/> Our Clients Said.</div>
+              <div className={styles.testimonials}>
+                <TestimonialCard/>
+                <TestimonialCard/>
+                <TestimonialCard/>
+              </div>
       </div>
       <div className={styles.callToAction}>
         <h1>Our biggest pleasure is having clients from <mark>all over the world.</mark></h1>

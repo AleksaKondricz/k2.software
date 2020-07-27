@@ -1,5 +1,6 @@
 export {default as MainCube} from './mainCube/mainCube';
 export {default as Map} from './map/map';
+export {default as Menu} from './menu/menu';
 export {default as Scratch} from './scratch/scratch';
 export {default as Ongoing} from './ongoing/ongoing';
 export {default as WebDev} from './webDev/webDev';
