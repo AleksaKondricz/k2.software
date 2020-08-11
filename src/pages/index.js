@@ -6,19 +6,19 @@ import {ContactForm} from '../containers/containers';
 import {MainCube, Map} from '../svg/svg';
 
 import techStackData from '../constants/techLogos';
-import background from '../images/geo-big.svg';
-import map from '../images/map-full.svg';
+
 import flag from '../images/cube.svg';
 import climbers from '../images/tech-cubes.svg';
 
 
+
 import styles from './styles/_styles.module.scss'; 
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+
+  return(<Layout>
   <div className={styles.homePage}>
     <div className={styles.hero}>
-      {/*<img src={background}/>*/}
       <MainCube/>
       <div className={styles.heroContent}>
       <h1>We turn visions into reality,<br/> your problems into dust.</h1>
@@ -75,6 +75,6 @@ const IndexPage = () => (
   </div>
 
   </Layout>
-)
+)}
 
 export default IndexPage

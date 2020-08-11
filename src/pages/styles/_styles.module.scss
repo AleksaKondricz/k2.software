@@ -277,13 +277,12 @@
             &>.heroContent{
                 position: relative;
                 left: 0;
-                top: 0;
+                top: 1vh;
                 &>h1{
                     font-size: 1.75rem;
                 }
                 &>p{
-                    font-size: 16px;
-                    line-height: 20px;
+                    display: none;
                 }
             }
         }

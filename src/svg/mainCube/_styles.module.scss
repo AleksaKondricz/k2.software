@@ -61,6 +61,12 @@
     
 }
 
+@media only screen and (max-width: 800px) {
+    #heroCube{
+        width: 188%;
+    }
+}
+
 @keyframes animateOrange{
     from{
         transform: translate(605.341px, 150px)
