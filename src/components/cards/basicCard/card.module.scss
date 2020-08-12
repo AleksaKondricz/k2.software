@@ -51,6 +51,7 @@
     box-sizing: border-box;
     height: 15vw;
     padding: 24px;
+   
     &>p{
         width: 57%;
     }
@@ -61,4 +62,28 @@
         transition: transform ease-in .45s;}
 
 
+}
+
+
+@media only screen and (max-width: 800px) {
+    .white{
+        width: 80%;
+        padding-bottom: 48px;
+        height: fit-content;
+    }
+    .wide{
+       width: 96%;
+        height: fit-content;
+        background-color: $white;
+        box-shadow: 0 8px 32px rgba(255,75,31,.14), 0 4px 8px rgba(255,75,31,.04);
+        &>p{
+            width: 100%;
+        }
+        &:nth-child(2){
+            background-color: $white-shade;
+        }
+        &:nth-child(3){
+            background-color: $red-10;
+        }
+    }
 }

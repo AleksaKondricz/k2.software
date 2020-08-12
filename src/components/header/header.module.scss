@@ -13,7 +13,7 @@
     z-index: 9;
     background-color: $white-shade;
   &>img{
-      height: 56px;
+      height: 40px;
       margin-left: 2%;
       cursor: pointer;
     
@@ -73,41 +73,53 @@
       box-shadow: 0 8px 32px rgba(255,75,31,.24), 0 4px 8px rgba(255,75,31,.14);
       transition: box-shadow .45s ease-in;
     }
-    
-    
-    
   }
 }
 
 
 @media only screen and (max-width: 800px) {
   .headerLanding{
+   
     &>.mobMenu{
       display: block;
       margin-right:  5%;
+
       &>svg{
         width: 30px;
       }
       &>span{
-        font-size: 1.9rem;
-        color: $red-100;
-        font-weight: 500;
+        display: none;
       }
+  
     }
   
     &>.mobMenuExtended{
       position: fixed;
-      top: 80px;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
       background-color: $white-shade;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      &>span{
+        font-size: 1.9rem;
+        color: black;
+        font-weight: 500;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      &>img{
+        width: 100%;
+      }
       &>nav{
-        margin-left: 5%;
         margin-bottom: 80px;
+        width: 86%;
+        top: 19vh;
+        position: relative;
         &>li{
           list-style-type: none;
           font-size: 2rem;

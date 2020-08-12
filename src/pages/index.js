@@ -1,4 +1,6 @@
-import React from "react"
+import React, {useState} from "react"
+import {navigate} from 'gatsby'
+
 import Layout from "../layout/layout";
 import {Button, Card, TestimonialCard} from '../components/components';
 import {ContactForm} from '../containers/containers';
@@ -8,6 +10,7 @@ import {MainCube, Map} from '../svg/svg';
 import techStackData from '../constants/techLogos';
 
 import flag from '../images/cube.svg';
+import footerCubes from '../images/objects.svg'
 import climbers from '../images/tech-cubes.svg';
 
 
@@ -16,14 +19,21 @@ import styles from './styles/_styles.module.scss';
 
 const IndexPage = () => {
 
+
   return(<Layout>
   <div className={styles.homePage}>
     <div className={styles.hero}>
+
       <MainCube/>
+     
       <div className={styles.heroContent}>
       <h1>We turn visions into reality,<br/> your problems into dust.</h1>
       <p>K2 Software is reliable, refreshing and ready to tackle any issue you may fence <br/>onto the road of launching your business idea into the internet space.</p>
-      <Button label='Step into our Office' type='primary'/>
+      <div className={styles.actions}>
+      <Button label='Step into our Office' type='primary'/> 
+      <span className={styles.estimate} onClick={()=>navigate('/getEstimation')}>get an estimation</span>
+      </div>
+
       </div>
       </div>
 
@@ -71,6 +81,7 @@ const IndexPage = () => {
       <div className={styles.contact}>
    
       <ContactForm/>
+      <img src={footerCubes}/>
       </div>
   </div>
 

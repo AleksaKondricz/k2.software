@@ -7,7 +7,7 @@ import {navigate} from 'gatsby';
 
 import {Menu} from '../../svg/svg';
 import logo from '../../images/logo-gradient.svg'
-
+import objects from '../../images/objects.svg'
 import styles from './header.module.scss';
 
 const Header = ({type}) => {
@@ -27,12 +27,14 @@ return(
      {type==='formHeader' ? '' : <div className={styles.mobMenu} onClick={()=>toggleMobHeader(!mobHeader)}>{!mobHeader? <Menu/> : <span className={styles.closeMenu}>X</span>}</div>}
      {mobHeader && 
         <div className={styles.mobMenuExtended}>
+          <span onClick={()=>toggleMobHeader(!mobHeader)} className={styles.closeMenu}>X</span>
           <nav>
           <li>Approach</li>
           <li>Services</li>
           <li>Technologies</li>
           <li>Clients</li>
           </nav>
+          <img src={objects}/>
         </div>
      }
     {type==='formHeader' ? <span className={styles.formHeader} onClick={()=>navigate('/')}>X</span> : <span className={styles.estimate} onClick={()=>navigate('/getEstimation')}>get an estimation</span>}
