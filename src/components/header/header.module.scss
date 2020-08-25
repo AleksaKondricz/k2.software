@@ -22,10 +22,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-right: -77px;
-      &>li{
+      margin-right: -120px;
+      &>a{
+          text-decoration: none;
           cursor: pointer;
-          list-style-type: none;
           color: $black;
           margin: 0 38px;
           font-size: 1.05rem;
@@ -117,14 +117,16 @@
       }
       &>nav{
         margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
         width: 86%;
         top: 19vh;
         position: relative;
-        &>li{
-          list-style-type: none;
+        &>a{
+          list-style: none;
           font-size: 2rem;
           font-weight: 700;
-          margin: 30px 0;
+          margin: 10px 0;
           color: $black;
         }
       }

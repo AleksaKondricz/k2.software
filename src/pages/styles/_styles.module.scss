@@ -27,12 +27,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            &>.actions{
-                
-                &>.estimate{
-                    display: none;
-                }
-            }
+           
       
         &>h1{
             color: $black;
@@ -260,7 +255,7 @@
       }
       &>.contact{
          border-top: 1px solid #dddee1;
-          width: 80%;
+          width: 92%;
           margin: auto;
           display: flex;
           align-items: center;
@@ -290,8 +285,8 @@
                 &>.actions{
                     display: flex;
                     width: 96%;
-                    flex-direction: row-reverse;
-                    justify-content: space-between;
+                    flex-direction: row;
+                    justify-content: flex-start;
                   
                    
                 &>button{
@@ -300,26 +295,7 @@
                     font-weight: 500;
                     
                 }
-                &>.estimate{
-                    cursor: pointer;
-                    color: $red-darker;
-                    text-transform: capitalize;
-                    font-weight: 600;
-                    font-size: .9rem;
-                    background-color: $white-shade;
-                    border-radius: 4px;
-                    border: 1px solid $white-shade;
-                    height: 27px;
-                    padding: 12px 18px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    box-shadow: 0 8px 32px rgba(255,75,31,.14), 0 4px 8px rgba(255,75,31,.04);
-                    &:hover{
-                    box-shadow: 0 8px 32px rgba(255,75,31,.24), 0 4px 8px rgba(255,75,31,.14);
-                    transition: box-shadow .45s ease-in;
-                  }
-                }}
+       }
                 &>h1{
                     font-size: 1.75rem;
                 }

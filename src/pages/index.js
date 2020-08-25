@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import {navigate} from 'gatsby'
+import {  animateScroll as scroll } from "react-scroll"
 
 import Layout from "../layout/layout";
 import {Button, Card, TestimonialCard} from '../components/components';
@@ -19,10 +20,13 @@ import styles from './styles/_styles.module.scss';
 
 const IndexPage = () => {
 
+  const scrollToBottom = () => {
+    scroll.scrollToBottom()
+   }
 
   return(<Layout>
   <div className={styles.homePage}>
-    <div className={styles.hero}>
+    <div id='hero' className={styles.hero}>
 
       <MainCube/>
      
@@ -30,14 +34,14 @@ const IndexPage = () => {
       <h1>We turn visions into reality,<br/> your problems into dust.</h1>
       <p>K2 Software is reliable, refreshing and ready to tackle any issue you may fence <br/>onto the road of launching your business idea into the internet space.</p>
       <div className={styles.actions}>
-      <Button label='Step into our Office' type='primary'/> 
-      <span className={styles.estimate} onClick={()=>navigate('/getEstimation')}>get an estimation</span>
+      <Button label='Step into our Office' type='primary' onClick={() => scrollToBottom()}/>
+
       </div>
 
       </div>
       </div>
 
-      <div className={styles.methods}>
+      <div id='methods' className={styles.methods}>
               <div className={styles.title}><img src={flag}/> Our Approach.</div>
               <div className={styles.methodsCards}>
                 <Card type='white'  title='Simplicity.' paragraph='Simple is better. Simple means clean and easy to use. We are building simple producst loved by everybody. Simple is better. Simple means clean and easy to use. We are building simple producst loved by everybody.'/>
@@ -45,7 +49,7 @@ const IndexPage = () => {
                 <Card type='white' title='Realibility.' paragraph='Simple is better. Simple means clean and easy to use. We are building simple producst loved by everybody. Simple is better. Simple means clean and easy to use. We are building simple producst loved by everybody.'/>
               </div>
       </div>
-      <div className={styles.services}>
+      <div id='services' className={styles.services}>
               <div className={styles.title}><img src={flag}/> Our Services.</div>
               <div className={styles.servicesCards}>
                 <Card title='Web Development' type='wide' paragraph='Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'/>
@@ -55,7 +59,7 @@ const IndexPage = () => {
               </div>
               <img src={climbers}/>
       </div>
-      <div className={styles.tech}>
+      <div id='tech' className={styles.tech}>
               <div className={styles.title}><img src={flag}/> Our Tech Stack.</div>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 <div className={styles.techCards}>
@@ -66,7 +70,7 @@ const IndexPage = () => {
                 </div>))}
                 </div>
       </div>
-      <div className={styles.clients}>
+      <div id='clients' className={styles.clients}>
               <div className={styles.title}><img src={flag}/> Our Clients Said.</div>
               <div className={styles.testimonials}>
                 <TestimonialCard/>
@@ -74,11 +78,11 @@ const IndexPage = () => {
                 <TestimonialCard/>
               </div>
       </div>
-      <div className={styles.callToAction}>
+      <div id='cta' className={styles.callToAction}>
         <h1>Our biggest pleasure is having clients from <mark>all over the world.</mark></h1>
         <Map/>
       </div>
-      <div className={styles.contact}>
+      <div id='contact' className={styles.contact}>
    
       <ContactForm/>
       <img src={footerCubes}/>
