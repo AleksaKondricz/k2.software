@@ -78,24 +78,43 @@
 
 
 @media only screen and (max-width: 800px) {
-  .headerLanding{
-   
-    &>.mobMenu{
+ 
+ .headerLanding{
+   &>img{
+     margin-left: 7%;
+   }
+   &>nav{
+     display: none;
+   }
+   &>.estimate{
+    display: none;
+  }
+  &> .mobMenu{
+    display: block;
+    margin-right:  7%;
+    &>.closeMenu{
       display: block;
-      margin-right:  5%;
-
-      &>svg{
-        width: 30px;
-      }
-      &>span{
-        display: none;
-      }
-  
+      font-size: 1.9rem;
+      color: $black;
+      font-family: $main-font;
+      font-weight: 500;
     }
+
+    &>svg{
+      width: 30px;
+    }
+    &>span{
+      display: none;
+    }
+
+  }
+ }
+
   
-    &>.mobMenuExtended{
+    .mobMenuExtended{
       position: fixed;
       top: 0;
+      z-index: 1;
       bottom: 0;
       left: 0;
       right: 0;
@@ -111,6 +130,8 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        z-index:2;
+     
       }
       &>img{
         width: 100%;
@@ -142,4 +163,4 @@
       display: none;
     }
   }
-}
+

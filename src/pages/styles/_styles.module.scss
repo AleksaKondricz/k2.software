@@ -273,6 +273,7 @@
 
 @media only screen and (max-width: 800px) {
     .homePage{
+      
         &>.hero{
             flex-direction: column-reverse;
             width: 90%;
@@ -387,6 +388,7 @@
         }
 
         &>.callToAction{
+            width: 94%;
             &>h1{text-align: center;
                 font-size:1.2rem;
                 top: 15vh;
