@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `K2 Awesome Software`,
+    description: `We make your visions, reality.`,
+    author: `@konkop`,
+    siteUrl: `https://k2-software.web.app/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
