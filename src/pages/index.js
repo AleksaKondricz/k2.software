@@ -3,7 +3,7 @@ import {navigate} from 'gatsby'
 import {  animateScroll as scroll } from "react-scroll"
 
 import Layout from "../layout/layout";
-import {Button, Card, TestimonialCard} from '../components/components';
+import {Button, Card, TestimonialCard, HeadContainer} from '../components/components';
 import {ContactForm} from '../containers/containers';
 
 import {MainCube, Map} from '../svg/svg';
@@ -24,7 +24,10 @@ const IndexPage = () => {
     scroll.scrollToBottom()
    }
 
-  return(<Layout>
+  return(
+ 
+  <Layout>
+     <HeadContainer/>
   <div className={styles.homePage}>
     <div id='hero' className={styles.hero}>
 

@@ -4,4 +4,4 @@ export {default as Button} from './button/button';
 export {default as Card} from './cards/basicCard/card';
 export {default as TestimonialCard} from './cards/testimonialCard/testimonialCard';
 export {default as TextInput} from './input/textInput/input';
-
+export {default as HeadContainer} from './seoTags/seoTags';
